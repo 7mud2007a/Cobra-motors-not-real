@@ -77,6 +77,12 @@ const Footer = ({ onOpenContact }) => {
           <span className="demo-disclaimer">
             جميع بيانات ومواصفات السيارات المعروضة لأغراض العرض التعريفي.
           </span>
+          <p className="developer-credit">
+            تم التطوير بواسطة{' '}
+            <a href="https://sevenmud-web-y0dt.onrender.com/#hero" target="_blank" rel="noopener noreferrer">
+              حمود
+            </a>
+          </p>
         </div>
       </div>
     </footer>
