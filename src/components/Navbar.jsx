@@ -17,14 +17,14 @@ const Navbar = ({ onOpenContact }) => {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-inner">
-        <a href="#hero" className="navbar-brand" aria-label="COBRA MOTORS Home">
+        <a href="#hero" className="navbar-brand" aria-label="الصفحة الرئيسية - كوبرا موتورز">
           <img src="/assets/cobra-logo.png" alt="COBRA MOTORS" className="navbar-logo-img" />
         </a>
 
         <nav className={`navbar-nav ${mobileMenuOpen ? 'open' : ''}`}>
-          <a href="#collection" onClick={() => setMobileMenuOpen(false)}>Collection</a>
-          <a href="#about" onClick={() => setMobileMenuOpen(false)}>About Us</a>
-          <a href="#social" onClick={() => setMobileMenuOpen(false)}>Connect</a>
+          <a href="#collection" onClick={() => setMobileMenuOpen(false)}>المعرض</a>
+          <a href="#about" onClick={() => setMobileMenuOpen(false)}>من نحن</a>
+          <a href="#social" onClick={() => setMobileMenuOpen(false)}>تواصل معنا</a>
           <button
             type="button"
             className="navbar-cta-mobile btn btn-primary"
@@ -34,7 +34,7 @@ const Navbar = ({ onOpenContact }) => {
             }}
           >
             <PhoneCall size={16} />
-            <span>Private Concierge</span>
+            <span>خدمة العملاء الخاصة</span>
           </button>
         </nav>
 
@@ -45,13 +45,13 @@ const Navbar = ({ onOpenContact }) => {
             onClick={onOpenContact}
           >
             <PhoneCall size={16} />
-            <span>Private Concierge</span>
+            <span>خدمة العملاء الخاصة</span>
           </button>
 
           <button
             type="button"
             className="navbar-toggle"
-            aria-label="Toggle menu"
+            aria-label="فتح القائمة"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
