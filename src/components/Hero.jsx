@@ -44,8 +44,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <a href="#collection" className={`hero-scroll-cue ${revealed ? 'visible' : ''}`} aria-label="Scroll to vehicle collection">
-        <span className="scroll-cue-text">EXPLORE FLEET</span>
+      <a href="#collection" className={`hero-scroll-cue ${revealed ? 'visible' : ''}`} aria-label="انتقل إلى معرض السيارات">
+        <span className="scroll-cue-text">اكتشف السيارات</span>
         <ChevronDown size={20} className="scroll-arrow" />
       </a>
     </section>
