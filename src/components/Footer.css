@@ -137,3 +137,23 @@
   font-size: 0.78rem;
   color: #64748b;
 }
+
+
+.developer-credit {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.developer-credit a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-red);
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.developer-credit a:hover {
+  color: var(--accent-red);
+}
