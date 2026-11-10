@@ -49,10 +49,10 @@ export const vehicles = [
     priceNumber: 380000,
     engine: '3.9L Twin-Turbo V8 (710 HP)',
     color: 'Rosso Corsa / Nero Roof',
-    image: '/assets/cars/194718667_1794338279232762.jpg',
+    image: '/assets/cars/954590984_1794338173823801.jpg',
     gallery: [
-      '/assets/cars/194718667_1794338279232762.jpg',
-      '/assets/cars/954590984_1794338173823801.jpg'
+      '/assets/cars/954590984_1794338173823801.jpg',
+      '/assets/cars/194718667_1794338279232762.jpg'
     ],
     description: 'A tribute to the most potent V8 engine in Maranello history. Sculpted with S-Duct aerodynamics, titanium exhaust system, carbon racing seats, and passenger display.'
   },
