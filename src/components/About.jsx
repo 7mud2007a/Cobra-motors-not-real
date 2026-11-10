@@ -61,31 +61,31 @@ const About = ({ stats }) => {
       <div className="container">
         <div className="about-grid">
           <div className="about-text-column">
-            <span className="section-tag">HERITAGE OF DISTINCTION</span>
-            <h2 className="section-title">About Us</h2>
+            <span className="section-tag">إرث من التميّز</span>
+            <h2 className="section-title">من نحن</h2>
 
             <p className="about-lead">
-              At COBRA MOTORS, our legacy is forged on an unwavering commitment to unparalleled automotive excellence, verified provenance, and absolute client satisfaction.
+              في كوبرا موتورز، نبني إرثنا على الشغف بالتميّز في عالم السيارات، والشفافية في تاريخ كل سيارة، والالتزام الكامل برضا عملائنا.
             </p>
 
             <p className="about-body">
-              Every machine within our showroom undergoes a meticulous multi-point technical assessment by certified master technicians. We cater to discerning collectors and connoisseurs who demand beyond ordinary luxury — delivering seamless private acquisitions, bespoke vehicle customization, and white-glove international logistics.
+              تخضع كل سيارة في معرضنا لفحص فني دقيق على أيدي مختصين. ونقدم لعشاق السيارات الفاخرة تجربة متكاملة تشمل الشراء الخاص، والتخصيص حسب الطلب، وخدمات التوصيل الدولي بعناية فائقة.
             </p>
 
             <div className="about-values">
               <div className="value-pill">
                 <ShieldCheck size={20} className="val-icon" />
                 <div>
-                  <strong>Certified Provenance</strong>
-                  <p>Guaranteed authentic history & mileage verification.</p>
+                  <strong>تاريخ موثّق</strong>
+                  <p>سجل موثوق للسيارة والتحقق من المسافة المقطوعة.</p>
                 </div>
               </div>
 
               <div className="value-pill">
                 <Sparkles size={20} className="val-icon" />
                 <div>
-                  <strong>Bespoke Sourcing</strong>
-                  <p>Worldwide access to rare and limited allocation hypercars.</p>
+                  <strong>اختيار حسب الطلب</strong>
+                  <p>إمكانية الوصول إلى السيارات النادرة والإصدارات المحدودة حول العالم.</p>
                 </div>
               </div>
             </div>
@@ -100,8 +100,8 @@ const About = ({ stats }) => {
                   <span className="stat-plus">+</span>
                 </div>
                 <div className="stat-label">
-                  <strong>Years of Experience</strong>
-                  <span>Delivering high-caliber luxury across the globe</span>
+                  <strong>سنوات من الخبرة</strong>
+                  <span>نقدم تجارب فاخرة بمعايير عالمية</span>
                 </div>
               </div>
 
@@ -113,8 +113,8 @@ const About = ({ stats }) => {
                   <span className="stat-plus">+</span>
                 </div>
                 <div className="stat-label">
-                  <strong>Cars Sold</strong>
-                  <span>Handcrafted supercars and luxury flagships delivered</span>
+                  <strong>سيارة تم بيعها</strong>
+                  <span>سيارات رياضية وفاخرة وصلت إلى أصحابها</span>
                 </div>
               </div>
 
@@ -126,8 +126,8 @@ const About = ({ stats }) => {
                   <span className="stat-plus">+</span>
                 </div>
                 <div className="stat-label">
-                  <strong>Happy Customers</strong>
-                  <span>Discerning VIP clients and private collectors</span>
+                  <strong>عميل سعيد</strong>
+                  <span>عملاء مميزون وهواة جمع السيارات</span>
                 </div>
               </div>
             </div>
