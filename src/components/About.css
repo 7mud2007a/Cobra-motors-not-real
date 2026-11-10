@@ -1,0 +1,151 @@
+.about-section {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.about-text-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+.about-body {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-top: 14px;
+  line-height: 1.7;
+}
+
+.about-values {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.value-pill {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--bg-card);
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+}
+
+.val-icon {
+  color: var(--accent-red);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.value-pill strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-black);
+}
+
+.value-pill p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* Stats Card */
+.stats-card-main {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 40px 36px;
+  box-shadow: var(--shadow-elevated);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--accent-red);
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 0;
+}
+
+@media (max-width: 500px) {
+  .stat-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.stat-number-wrap {
+  display: flex;
+  align-items: baseline;
+  min-width: 130px;
+}
+
+.stat-number {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--color-black);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.stat-plus {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-red);
+  margin-left: 2px;
+}
+
+.stat-label strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.stat-label span {
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  display: block;
+  margin-top: 3px;
+}
+
+.stat-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 14px 0;
+}
