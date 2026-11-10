@@ -30,11 +30,10 @@ export const vehicles = [
     priceNumber: 265000,
     engine: '4.0L Bi-Turbo V8 (577 HP)',
     color: 'Night Black Magno Matte',
-    image: '/assets/cars/mercedes-g63-1.jpg',
+    image: '/assets/cars/256335160_1794337387678056.jpg',
     gallery: [
-      '/assets/cars/mercedes-g63-1.jpg',
-      '/assets/cars/mercedes-g63-2.jpg',
-      '/assets/cars/mercedes-g63-3.jpg'
+      '/assets/cars/256335160_1794337387678056.jpg',
+      '/assets/cars/966433920_1794336494676749.jpg'
     ],
     description: 'The definitive luxury off-road powerhouse. Featuring exclusive Bengal Red diamond-quilted nappa leather, AMG Night Package II, and custom sport exhaust acoustics.'
   },
