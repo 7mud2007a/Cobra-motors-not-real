@@ -44,7 +44,7 @@ const CarDetailsModal = ({ car, onClose }) => {
           type="button"
           className="modal-close-btn"
           onClick={onClose}
-          aria-label="Close vehicle details"
+          aria-label="إغلاق تفاصيل السيارة"
         >
           <X size={24} />
         </button>
@@ -69,7 +69,7 @@ const CarDetailsModal = ({ car, onClose }) => {
                     key={thumb}
                     className={`thumbnail-btn ${activeImageIndex === idx ? 'active' : ''}`}
                     onClick={() => setActiveImageIndex(idx)}
-                    aria-label={`View photo ${idx + 1}`}
+                    aria-label={`عرض الصورة ${idx + 1}`}
                   >
                     <img src={thumb} alt="" />
                   </button>
@@ -78,7 +78,7 @@ const CarDetailsModal = ({ car, onClose }) => {
             )}
 
             <div className="modal-description-box">
-              <h4 className="box-title">Vehicle Heritage & Overview</h4>
+              <h4 className="box-title">نبذة عن السيارة ومميزاتها</h4>
               <p className="box-text">{car.description}</p>
             </div>
           </div>
@@ -93,42 +93,42 @@ const CarDetailsModal = ({ car, onClose }) => {
             <div className="modal-specs-grid">
               <div className="modal-spec-card">
                 <span className="spec-label">
-                  <Calendar size={16} /> Year
+                  <Calendar size={16} /> سنة الصنع
                 </span>
                 <span className="spec-val">{car.year}</span>
               </div>
 
               <div className="modal-spec-card">
                 <span className="spec-label">
-                  <Gauge size={16} /> Mileage
+                  <Gauge size={16} /> المسافة المقطوعة
                 </span>
                 <span className="spec-val">{car.mileage}</span>
               </div>
 
               <div className="modal-spec-card">
                 <span className="spec-label">
-                  <Fuel size={16} /> Fuel Type
+                  <Fuel size={16} /> نوع الوقود
                 </span>
                 <span className="spec-val">{car.fuel}</span>
               </div>
 
               <div className="modal-spec-card">
                 <span className="spec-label">
-                  <Cog size={16} /> Transmission
+                  <Cog size={16} /> ناقل الحركة
                 </span>
                 <span className="spec-val">{car.transmission}</span>
               </div>
 
               <div className="modal-spec-card">
                 <span className="spec-label">
-                  <Zap size={16} /> Engine Capacity
+                  <Zap size={16} /> المحرك
                 </span>
                 <span className="spec-val">{car.engine}</span>
               </div>
 
               <div className="modal-spec-card">
                 <span className="spec-label">
-                  <Palette size={16} /> Exterior Color
+                  <Palette size={16} /> اللون الخارجي
                 </span>
                 <span className="spec-val">{car.color}</span>
               </div>
@@ -137,33 +137,33 @@ const CarDetailsModal = ({ car, onClose }) => {
             {/* Inquire section */}
             <div className="modal-inquiry-box">
               <div className="inquiry-header">
-                <h3>VIP Vehicle Inquiry</h3>
-                <p>Submit your interest to reserve this vehicle or arrange a private viewing.</p>
+                <h3>استفسار حول السيارة</h3>
+                <p>أرسل طلبك لحجز السيارة أو لترتيب موعد مشاهدة خاص.</p>
               </div>
 
               {inquirySent ? (
                 <div className="inquiry-success">
                   <CheckCircle2 size={36} className="success-icon" />
-                  <h4>Inquiry Received</h4>
-                  <p>Our executive client advisor will contact you within 15 minutes regarding the <strong>{car.name}</strong>.</p>
+                  <h4>تم استلام طلبك</h4>
+                  <p>سيتواصل معك مستشار المبيعات خلال 15 دقيقة بخصوص <strong>{car.name}</strong>.</p>
                   <button
                     type="button"
                     className="btn btn-outline"
                     onClick={() => setInquirySent(false)}
                     style={{ marginTop: 14 }}
                   >
-                    Send Another Request
+                    إرسال طلب آخر
                   </button>
                 </div>
               ) : (
                 <form className="inquiry-form" onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <label htmlFor="fullName">Full Name</label>
+                    <label htmlFor="fullName">الاسم الكامل</label>
                     <input
                       id="fullName"
                       type="text"
                       required
-                      placeholder="e.g. Sheikh Sultan / Alexander Vance"
+                      placeholder="أدخل اسمك الكامل"
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                     />
@@ -171,7 +171,7 @@ const CarDetailsModal = ({ car, onClose }) => {
 
                   <div className="form-row">
                     <div className="form-group">
-                      <label htmlFor="phone">Phone / WhatsApp</label>
+                      <label htmlFor="phone">الهاتف / واتساب</label>
                       <input
                         id="phone"
                         type="tel"
@@ -182,12 +182,12 @@ const CarDetailsModal = ({ car, onClose }) => {
                       />
                     </div>
                     <div className="form-group">
-                      <label htmlFor="email">Email</label>
+                      <label htmlFor="email">البريد الإلكتروني</label>
                       <input
                         id="email"
                         type="email"
                         required
-                        placeholder="client@luxury.com"
+                        placeholder="name@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       />
@@ -195,7 +195,7 @@ const CarDetailsModal = ({ car, onClose }) => {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="notes">Custom Inquiries / Delivery Options</label>
+                    <label htmlFor="notes">استفسارات إضافية / خيارات التوصيل</label>
                     <textarea
                       id="notes"
                       rows={2}
@@ -208,7 +208,7 @@ const CarDetailsModal = ({ car, onClose }) => {
                   <div className="inquiry-actions">
                     <button type="submit" className="btn btn-primary submit-btn">
                       <Send size={16} />
-                      <span>Request Immediate Consultation</span>
+                      <span>اطلب التواصل الفوري</span>
                     </button>
                     <a
                       href={`https://wa.me/966500000000?text=Hello%20COBRA%20MOTORS,%20I%20am%20interested%20in%20the%20${encodeURIComponent(car.name)}`}
@@ -217,7 +217,7 @@ const CarDetailsModal = ({ car, onClose }) => {
                       className="btn btn-outline whatsapp-quick-btn"
                     >
                       <Phone size={16} />
-                      <span>WhatsApp Direct</span>
+                      <span>تواصل عبر واتساب</span>
                     </a>
                   </div>
                 </form>
