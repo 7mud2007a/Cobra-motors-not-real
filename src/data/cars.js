@@ -30,7 +30,7 @@ export const vehicles = [
     priceNumber: 265000,
     engine: '4.0L Bi-Turbo V8 (577 HP)',
     color: 'Night Black Magno Matte',
-    image: '/assets/cars/256335160_1794337387678056.jpg',
+    image: '/assets/cars/966433920_1794336494676749.jpg',
     gallery: [
       '/assets/cars/256335160_1794337387678056.jpg',
       '/assets/cars/966433920_1794336494676749.jpg'
