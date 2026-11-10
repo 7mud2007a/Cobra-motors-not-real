@@ -8,11 +8,11 @@ const CarCollection = ({ vehicles, onSelectCar }) => {
       <div className="container">
         <header className="collection-header">
           <div>
-            <span className="section-tag">COBRA FLEET</span>
-            <h2 className="section-title">The Masterpiece Collection</h2>
+            <span className="section-tag">أسطول كوبرا</span>
+            <h2 className="section-title">مجموعة السيارات الفاخرة</h2>
           </div>
           <p className="section-desc">
-            An immaculate assembly of eight world-class luxury vehicles, each certified and maintained to peak mechanical and aesthetic standards.
+            مجموعة مختارة بعناية من أربع سيارات فاخرة، خضعت للفحص والصيانة وفق أعلى معايير الجودة والأداء.
           </p>
         </header>
 
@@ -30,7 +30,7 @@ const CarCollection = ({ vehicles, onSelectCar }) => {
                   onSelectCar(car);
                 }
               }}
-              aria-label={`View details for ${car.name}`}
+              aria-label={`عرض تفاصيل ${car.name}`}
             >
               <div className="car-card-media">
                 <img
@@ -42,7 +42,7 @@ const CarCollection = ({ vehicles, onSelectCar }) => {
                 <span className="car-card-badge">0{index + 1}</span>
                 <div className="car-card-overlay">
                   <span className="overlay-btn">
-                    <span>Inspect Vehicle</span>
+                    <span>استعرض السيارة</span>
                     <ArrowUpRight size={18} />
                   </span>
                 </div>
@@ -58,19 +58,19 @@ const CarCollection = ({ vehicles, onSelectCar }) => {
                 </div>
 
                 <div className="car-specs-grid">
-                  <div className="spec-item" title="Manufacturing Year">
+                  <div className="spec-item" title="سنة الصنع">
                     <Calendar size={15} className="spec-icon" />
                     <span>{car.year}</span>
                   </div>
-                  <div className="spec-item" title="Mileage">
+                  <div className="spec-item" title="المسافة المقطوعة">
                     <Gauge size={15} className="spec-icon" />
                     <span>{car.mileage}</span>
                   </div>
-                  <div className="spec-item" title="Fuel Type">
+                  <div className="spec-item" title="نوع الوقود">
                     <Fuel size={15} className="spec-icon" />
                     <span>{car.fuel.split('/')[0].trim()}</span>
                   </div>
-                  <div className="spec-item" title="Transmission">
+                  <div className="spec-item" title="ناقل الحركة">
                     <Cog size={15} className="spec-icon" />
                     <span>{car.transmission.split(' ')[0]}</span>
                   </div>
@@ -78,7 +78,7 @@ const CarCollection = ({ vehicles, onSelectCar }) => {
 
                 <div className="car-card-footer">
                   <span className="view-details-link">
-                    <span>Explore Full Specs & Inquire</span>
+                    <span>عرض المواصفات والاستفسار</span>
                     <ArrowUpRight size={16} />
                   </span>
                 </div>
