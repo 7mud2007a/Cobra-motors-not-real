@@ -15,7 +15,6 @@ export const vehicles = [
     gallery: [
       '/assets/cars/147647342_1794335360339586.jpg',
       '/assets/cars/839038434_1794335602923634.jpg',
-      '/assets/cars/porsche-911-3.jpg'
     ],
     description: 'An uncompromising precision motorsport icon designed for aerodynamic mastery and pure track-bred ecstasy. Equipped with the Weissach package, front-axle lift, and carbon-ceramic brakes.'
   },
