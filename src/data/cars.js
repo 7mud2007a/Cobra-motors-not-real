@@ -68,11 +68,10 @@ export const vehicles = [
     priceNumber: 455000,
     engine: '6.75L Twin-Turbocharged V12 (563 HP)',
     color: 'Diamond Black / Grace White Coachline',
-    image: '/assets/cars/rolls-royce-ghost-1.jpg',
+    image: '/assets/cars/1012560791_1794339001634125.jpg',
     gallery: [
-      '/assets/cars/rolls-royce-ghost-1.jpg',
-      '/assets/cars/rolls-royce-ghost-2.jpg',
-      '/assets/cars/rolls-royce-ghost-3.jpg'
+      '/assets/cars/1012560791_1794339001634125.jpg',
+      '/assets/cars/171476008_1794339382843195.jpg'
     ],
     description: 'The pinnacle of whisper-quiet automotive serenity. Featuring the iconic Starlight headliner with shooting stars, rear theater configuration, and lambswool footmats.'
   },
