@@ -329,3 +329,121 @@
   color: var(--color-text-muted);
   margin-top: 6px;
 }
+
+
+/* Mobile modal: keep the full vehicle details inside the phone viewport.
+   The modal scrolls vertically instead of requiring two-axis panning. */
+@media (max-width: 600px) {
+  .modal-backdrop {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-container {
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(100dvh - 20px);
+    max-height: calc(100vh - 20px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 14px;
+    overscroll-behavior: contain;
+  }
+
+  .modal-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    min-width: 0;
+    padding: 64px 14px 18px;
+  }
+
+  .modal-gallery-column,
+  .modal-info-column {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .modal-main-image-wrap {
+    aspect-ratio: 4 / 3;
+  }
+
+  .modal-main-image {
+    object-fit: contain;
+  }
+
+  .modal-thumbnails {
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  .thumbnail-btn {
+    flex-basis: 76px;
+    height: 54px;
+  }
+
+  .modal-price-pill {
+    right: 10px;
+    bottom: 10px;
+    padding: 6px 10px;
+    font-size: 1rem;
+  }
+
+  .modal-description-box,
+  .modal-inquiry-box {
+    padding: 15px;
+  }
+
+  .modal-title-header {
+    margin-bottom: 16px;
+    padding-right: 34px;
+  }
+
+  .modal-title {
+    overflow-wrap: anywhere;
+    font-size: clamp(1.35rem, 6vw, 1.8rem);
+  }
+
+  .modal-specs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .modal-spec-card {
+    min-width: 0;
+    padding: 10px;
+  }
+
+  .spec-val {
+    overflow-wrap: anywhere;
+    font-size: 0.84rem;
+  }
+
+  .inquiry-actions {
+    flex-direction: column;
+  }
+
+  .inquiry-actions .btn {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .modal-close-btn {
+    position: sticky;
+    top: 10px;
+    align-self: flex-end;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px -50px auto;
+  }
+}
